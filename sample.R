@@ -111,7 +111,7 @@ dev.off()
 #Compute spearman correlations of NIJ between samples
 xd <- seq(range(UMAP$layout[,1])[1],range(UMAP$layout[,1])[2],length=11)
 yd <- seq(range(UMAP$layout[,2])[1],range(UMAP$layout[,2])[2],length=11)
-#repeat the follwing for j>=5 with renaming cutdx1 and cutdy1 to cutdxn and cutdyn (n=j-4).
+#repeat the follwing from j=5 to j=12 with renaming cutdx1 and cutdy1 to cutdxn and cutdyn (n=j-4).
 cutdx1 <- cut(UMAP$layout[col==1,1],xd)
 cutdy1 <- cut(UMAP$layout[col==1,2],xd)
 TABLE1 <- table(cutdx1,cutdy1)
