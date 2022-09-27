@@ -11,6 +11,15 @@ library(GenomicFeatures) #import grange tools
 #binning scATAC-seq within 200 bp length blocks
 L<-200 
 j<-5 #repeat the following with changing from j=5 to j=12
+#j=5  : CTX1
+#j=6  : MGE1
+#j=7  : CGE1
+#j=8  : LGE1
+#j=9  : CTX2
+#j=10 : MGE2
+#j=11 : CGE2
+#j=12 : LGE2
+
 x <- readMM(files[j])
 y <- read.csv(files1[j],header=F,sep="\t")
 gr <- GRanges(seqnames=y[,1],ranges=IRanges(start=y[,2], end=y[,3]),score=0)
