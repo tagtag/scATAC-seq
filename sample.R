@@ -8,7 +8,7 @@ require(Matrix) #impot sparse matrix enviroment
 
 library(GenomicFeatures) #import grange tools
 
-#bining scATAC-seq within 200 bp length blocks
+#binning scATAC-seq within 200 bp length blocks
 L<-200 
 j<-5 #repeat the following with changing from j=5 to j=12
 x <- readMM(files[j])
