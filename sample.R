@@ -86,7 +86,7 @@ dev.off()
 
 #Umap 
 X <- t(x_all) %*% SVD_all_all_p #repeat this line from j=5 to j=12 with renaming X to Xn, where n=j-5
-X <- rbind(X,X1,X2,X3<X4,X5,X6,X7) 
+X <- rbind(X,X1,X2,X3,X4,X5,X6,X7) 
 
 files2 <- list.files("./",pattern="barcodes.tsv")
 num <- NULL
