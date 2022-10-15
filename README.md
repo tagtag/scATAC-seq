@@ -7,6 +7,7 @@ by Y-H. Taguchi  and Turki Turki
 https://doi.org/10.1101/2022.08.04.502875
 
 ============================
+
 For the people who would like to try this procedure by themselves, we put a R script, TD_scATAC_seq.R, which includes a function TD_scATAC_seq that can perform the analysis in the above paper.
 
 Usage:
